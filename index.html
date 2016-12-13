@@ -83,6 +83,12 @@
 		        
 					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
+					<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
+		        
+					<a class="mail" target="_blank" href="/yinxuefeihn@gmail.com" title="mail"><i class="icon-mail"></i></a>
+		        
+					<a class="google" target="_blank" href="#" title="google"><i class="icon-google"></i></a>
+		        
 			</div>
 		</nav>
 	</header>		
@@ -126,6 +132,12 @@
 						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
 						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+						<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
+			        
+						<a class="mail" target="_blank" href="/yinxuefeihn@gmail.com" title="mail"><i class="icon-mail"></i></a>
+			        
+						<a class="google" target="_blank" href="#" title="google"><i class="icon-google"></i></a>
 			        
 				</div>
 			</nav>
@@ -273,7 +285,7 @@
     </div>
     <script>
 	var yiliaConfig = {
-		mathjax: false,
+		mathjax: true,
 		isHome: true,
 		isPost: false,
 		isArchive: false,
@@ -286,6 +298,27 @@
 </script>
 
 <script src="/./main.js?v=4.0.0.js"></script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
     
